@@ -1,0 +1,67 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+.task-card {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px black;
+ 
+}
+
+.task-card:hover {
+  box-shadow: 0 0 10px black;
+  cursor: grab;
+}
+
+.task-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.task-description {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.task-due-date {
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 5px;
+}
+
+.delete-task-btn {
+  background-color: #dc3545;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+ 
+}
+
+.delete-task-btn:hover {
+  background-color: #c82333;
+}
+.past-due {
+  background-color: #e04949; /* Red background for past due tasks */
+}
+
+.due-today {
+  background-color: #f8d302; /* Yellow background for tasks due today */
+}
+.past-due .delete-task-btn{
+  border-color: #ffffff;
+}
+.due-future {
+  background-color: #ffffff; /* White background for tasks due in the future */
+}
+.swim-lanes {
+  min-height: 60vh;
+}
+
