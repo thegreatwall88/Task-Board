@@ -112,7 +112,7 @@ function handleDrop(event, ui) {
 function applyStyles(card, dueDate) {
     const today = dayjs();
     const taskDueDate = dayjs(dueDate);
-    if (card.attr('status') === 'todo') {
+    //if (card.attr('status') === 'todo') {
         if (taskDueDate.diff(today, 'day') < 0) {
             card.addClass('past-due');
         } else if (taskDueDate.diff(today, 'day') === 0) {
@@ -120,7 +120,7 @@ function applyStyles(card, dueDate) {
         } else {
             card.addClass('due-future');
         }
-    }
+   // }
 }
 
 $(document).ready(function () {
